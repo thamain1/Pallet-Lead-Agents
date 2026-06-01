@@ -1,0 +1,3 @@
+# Phase 1 — Initial schema lands here.
+# Migration file naming: NNNN_description.sql, sequentially numbered.
+# Apply via Supabase CLI or the Supabase Management API.

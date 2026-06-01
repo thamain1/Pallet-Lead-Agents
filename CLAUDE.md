@@ -122,13 +122,15 @@ This repo has more than one developer, each using Claude Code. Each developer's 
 
 Anything that needs to outlive a conversation or be visible to the other developer's Claude session must live in the repo:
 
-- **Architectural decisions** → ADR-style notes in `docs/decisions/NNNN-short-title.md` (create the folder when needed; `docs/` will be gitignored for contracts but `docs/decisions/` should be tracked when added)
-- **Conventions, gotchas, scope clarifications** → update this CLAUDE.md
-- **Test strategies, env setup, runbooks** → standard repo docs
+- **Architectural decisions** → ADR-style notes in `decisions/NNNN-short-title.md` (at the repo root, NOT under `docs/` — `docs/` is gitignored on this public repo because it holds commercial documents)
+- **Conventions, gotchas, scope clarifications** → update this CLAUDE.md or `CONTRIBUTING.md`
+- **Test strategies, env setup, runbooks** → standard repo docs (`README.md`, etc.)
 
 If you make a decision in conversation that affects how the other developer should code, commit a note. The other Claude is not telepathic.
 
 **Note on `docs/`:** The `docs/` folder is gitignored on this public repo because it holds the commercial MOU and invoices (with personally identifying info and banking details). If the repo is later made private, that gitignore can be removed. For now, commercial documents are shared out-of-band.
+
+**Note on `decisions/`:** ADRs live at the repo root in `decisions/`, not under `docs/`. They are tracked in git. Use `decisions/NNNN-short-title.md` numbering. See `decisions/0001-phase-0-scaffolding.md` for the first one.
 
 ---
 

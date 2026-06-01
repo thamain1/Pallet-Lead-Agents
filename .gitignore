@@ -15,12 +15,20 @@ docs/
 # Dependencies
 node_modules/
 .pnpm-store/
+.yarn/
 
 # Build output
 .next/
+next-env.d.ts
 out/
 dist/
 build/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Vercel (if ever used)
+.vercel
 
 # Supabase local state
 .supabase/
