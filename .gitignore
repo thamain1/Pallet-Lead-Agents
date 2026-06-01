@@ -1,0 +1,45 @@
+# Commercial documents — kept off this public repo.
+# Contains MOU, invoices, banking details, and client PII.
+# Share these out-of-band, not through GitHub, while the repo is public.
+docs/
+
+# Environment / secrets
+.env
+.env.local
+.env.development
+.env.production
+.env*.local
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+.next/
+out/
+dist/
+build/
+
+# Supabase local state
+.supabase/
+**/.supabase/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Coverage and test artifacts
+coverage/
+.nyc_output/
